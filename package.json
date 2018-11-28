@@ -1,0 +1,32 @@
+{
+  "name": "project-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"nodemon server.js\" \"cd ./client  && npm start \" ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelee91/Project-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelee91/Project-3/issues"
+  },
+  "homepage": "https://github.com/joelee91/Project-3#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14"
+  },
+  "engines": {
+    "node": "10.13.0"
+  }
+}
