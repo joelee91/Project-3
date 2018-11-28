@@ -6,6 +6,12 @@ const userController = {
             .then((users) => {
                 res.send(users)
             })
+    },
+    show: (req, res) => {
+        User.findById(req.params.userId).populate('toDo')
+            .then((user) => {
+                res.send(user)
+            })
     }
 }
 
